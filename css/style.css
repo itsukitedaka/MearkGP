@@ -1,0 +1,173 @@
+body
+{
+    background-color: rgb(255, 255, 255);;
+    font-size: 16px;
+}
+html{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*ヘッダ*/
+.header{
+    width: 100%;
+    height: 38px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_text{
+    font-size: 32px;
+    text-align: center;
+}
+/*天気温度*/
+.weather_view_warapper{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(144, 144, 144);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.today_data_box{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10%;
+}
+.temp_text{
+    font-size: 0.6rem;
+    margin: 0px 5px;
+}
+.weather_sub_text{
+    position:absolute;
+    display: flex;
+    width: 100%;
+    bottom: 5px;
+    justify-content: center;
+}
+.weather_icon{
+    position: relative;
+    right: -25px;
+    width: 100px;
+    height: 100px;
+}
+/*記録表*/
+.log_view_warapper{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.log_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto; /* 縦方向のスクロールを有効化 */
+    scrollbar-width: thin; /* オプション: スクロールバーの幅を調整 */
+}
+.log_contents{
+    list-style: none;
+    text-align: center;
+    word-wrap: break-word;
+    height: 65px;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #F1E4E4
+}
+.log_contents:nth-child(even){
+    background-color: #D9D9D9
+}
+.log_icon_btn{
+    background-color: #c4c4c4;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px;
+}
+/*カレンダー*/
+.calendar_container {
+    text-align: center;
+    margin-top: 20px;
+}
+/*登録*/
+.input_form{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input_time{
+    width: 100px;
+    height: 32px;
+}
+#input_date{
+    width: 100px;
+    height: 32px;
+    font-size: 0.7rem;
+}
+#input_detail{
+    margin-left: 5px;
+    width: 250px;
+    height: 100px;
+    margin-top: 19px;
+    resize: none;
+}
+.input_label{
+    font-size: 0.9rem;
+}
+.time_box{
+    width: 150px;
+}
+.date_box{
+    width: 150px;
+}
+.deta_box{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.input_flex{
+    margin-top: 16px;
+    display: flex;
+}
+#regist_button{
+    margin-top: 16px;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    padding: 2rem 2rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 50%;
+}
+#regist_button:hover{
+    background-color: rgb(171, 171, 171);
+}
+#regist_button:active{
+    background-color: #212529;
+    color: #D9D9D9;
+}
