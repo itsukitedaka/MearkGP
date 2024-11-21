@@ -26,9 +26,9 @@ function getWeather() {
                     //$('#weather').text(weather);
                     
                     $('#current_temp').text(`${temp} °C`);
-                    $('#max_temp').text(`${temp_max} °C`);
-                    $('#min_temp').text(`${temp_min} °C`);
-                    $('#humidity_temp').text(`${humidity} %`);
+                    $('#max_temp').text(`最高気温${temp_max} °C`);
+                    $('#min_temp').text(`最低気温${temp_min} °C`);
+                    $('#humidity_temp').text(`湿度${humidity} %`);
 
                 },
                 error: function (error) {
