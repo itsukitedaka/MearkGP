@@ -78,7 +78,6 @@
         </main>
     </div>
     <!-- jQueryとjQuery UIの読み込み -->
-    
     <script src="js/weather.js"></script>
     <script src="js/script.js"></script>
 </body>
