@@ -63,7 +63,7 @@ $(document).ready(function () {
         const currentScroll = $("#task_list").scrollTop();
         $("#task_list").scrollTop(currentScroll + 30); // 下方向に30pxスクロール
     });
-
+    
     // 初期表示
     loadTodos(selectedDate);
 });

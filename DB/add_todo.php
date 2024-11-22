@@ -1,6 +1,6 @@
 <?php
-$dsn = 'mysql:dbname=mearkgp;host=localhost;charset=utf8';
-$user = 'root';
+$dsn = 'mysql:dbname=;host=;charset=utf8';
+$user = '';
 $password = '';
 
 try {
