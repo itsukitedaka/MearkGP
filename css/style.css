@@ -84,7 +84,8 @@ html{
     height: 65px;
     width: 80%;
     max-width: 1000px;
-    background-color: #F1E4E4
+    background-color: #F1E4E4;
+    padding: 20px 0;
 }
 .log_contents:nth-child(even){
     background-color: #D9D9D9
